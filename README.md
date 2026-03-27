@@ -1,3 +1,5 @@
+> **📅 Project Period:** Aug 2025 – Sep 2025 &nbsp;|&nbsp; **Status:** Completed &nbsp;|&nbsp; **Author:** [Bharghava Ram Vemuri](https://github.com/bharghavaram)
+
 # Multimodal Streaming AI Pipeline
 
 > Real-time event-driven AI processing pipeline for images (GPT-4 Vision), audio (Whisper), and text via Apache Kafka
