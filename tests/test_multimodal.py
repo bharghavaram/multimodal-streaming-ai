@@ -11,8 +11,7 @@ def test_settings():
 
 
 def test_kafka_producer_fallback():
-    with patch("app.services.multimodal_service.OpenAI"), \
-         patch("app.services.multimodal_service.Anthropic"):
+    with patch("app.services.multimodal_service.OpenAI"):
         from app.services.multimodal_service import KafkaProducer
         producer = KafkaProducer()
         # Kafka not running – should fall back to in-memory queue
@@ -25,8 +24,7 @@ def test_kafka_producer_fallback():
 
 
 def test_pipeline_stats_empty():
-    with patch("app.services.multimodal_service.OpenAI"), \
-         patch("app.services.multimodal_service.Anthropic"):
+    with patch("app.services.multimodal_service.OpenAI"):
         from app.services.multimodal_service import MultimodalService
         svc = MultimodalService()
         stats = svc.get_pipeline_stats()
