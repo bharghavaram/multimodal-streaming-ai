@@ -16,7 +16,11 @@
 
 ---
 
-## 🎯 Problem Statement
+<div align="center">
+  <img src="https://raw.githubusercontent.com/bharghavaram/multimodal-streaming-ai/main/docs/images/demo.svg" alt="multimodal-streaming-ai demo" width="820"/>
+</div>
+
+--- 🎯 Problem Statement
 
 Modern applications generate continuous streams of images, audio, and text simultaneously. Processing these modalities independently misses cross-modal insights — a security camera seeing smoke while audio picks up an alarm means fire, but processing them separately may miss the correlation. This pipeline uses Apache Kafka as the event bus, GPT-4 Vision for image analysis, OpenAI Whisper for audio transcription, and a multimodal fusion layer to produce unified cross-modal insights in real time.
 
